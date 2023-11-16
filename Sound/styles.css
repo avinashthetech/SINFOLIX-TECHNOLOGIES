@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(34,36,0,0.38996848739495793) 18%, rgba(9,121,16,0.06783963585434172) 58%, rgba(0,185,255,0.26111694677871145) 100%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#score-display {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#level-display {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.simon-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#green { background-color: #28a745; }
+#red { background-color: #dc3545; }
+#yellow { background-color: #ffc107; }
+#blue { background-color: #007bff; }
+
+/* Add this style to prevent hover effect on the Start Game button */
+#start-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#start-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Add this style for button flash animation */
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.flash {
+    animation: flash 0.5s ease;
+}

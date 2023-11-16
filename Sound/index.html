@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simon Game</h1>
+        <div id="score-display">Score: 0</div>
+        <div id="level-display">Level: 0</div>
+        <div id="buttons-container">
+            <div id="green" class="simon-button" onclick="handleButtonClick('green')"></div>
+            <div id="red" class="simon-button" onclick="handleButtonClick('red')"></div>
+            <div id="yellow" class="simon-button" onclick="handleButtonClick('yellow')"></div>
+            <div id="blue" class="simon-button" onclick="handleButtonClick('blue')"></div>
+        </div>
+        <button id="start-btn" onclick="startGame()">Start Game</button>
+        <audio id="green-sound" src="green-sound.mp3"></audio>
+        <audio id="red-sound" src="red-sound.mp3"></audio>
+        <audio id="yellow-sound" src="yellow-sound.mp3"></audio>
+        <audio id="blue-sound" src="blue-sound.mp3"></audio>
+        <audio id="error-sound" src="error-sound.mp3"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
